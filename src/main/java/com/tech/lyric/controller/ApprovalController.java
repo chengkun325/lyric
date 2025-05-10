@@ -2,9 +2,9 @@
  * @Author: chengkun
  * @Date: 2025-05-10 10:37:54
  * @LastEditors: chengkun
- * @LastEditTime: 2025-05-10 11:55:03
+ * @LastEditTime: 2025-05-10 12:17:45
  * @FilePath: /lyric/src/main/java/com/tech/lyric/controller/ApprovalController.java
- * @Description: 
+ * @Description: 审批流程控制器
  * 
  * Copyright (c) 2025 by chengkun, All Rights Reserved. 
  */

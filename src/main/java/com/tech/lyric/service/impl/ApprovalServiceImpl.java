@@ -2,9 +2,9 @@
  * @Author: chengkun
  * @Date: 2025-05-10 10:34:58
  * @LastEditors: chengkun
- * @LastEditTime: 2025-05-10 11:55:52
+ * @LastEditTime: 2025-05-10 12:20:34
  * @FilePath: /lyric/src/main/java/com/tech/lyric/service/impl/ApprovalServiceImpl.java
- * @Description: 
+ * @Description: 审批服务实现类
  * 
  * Copyright (c) 2025 by chengkun, All Rights Reserved. 
  */

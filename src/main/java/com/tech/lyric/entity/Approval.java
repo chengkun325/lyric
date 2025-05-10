@@ -2,9 +2,9 @@
  * @Author: chengkun
  * @Date: 2025-05-09 22:56:10
  * @LastEditors: chengkun
- * @LastEditTime: 2025-05-10 11:55:40
+ * @LastEditTime: 2025-05-10 12:19:00
  * @FilePath: /lyric/src/main/java/com/tech/lyric/entity/Approval.java
- * @Description: 
+ * @Description: 审批实体类
  * 
  * Copyright (c) 2025 by chengkun, All Rights Reserved. 
  */
