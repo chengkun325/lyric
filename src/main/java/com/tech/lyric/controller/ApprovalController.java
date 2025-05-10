@@ -2,7 +2,7 @@
  * @Author: chengkun
  * @Date: 2025-05-10 10:37:54
  * @LastEditors: chengkun
- * @LastEditTime: 2025-05-10 12:17:45
+ * @LastEditTime: 2025-05-10 16:19:15
  * @FilePath: /lyric/src/main/java/com/tech/lyric/controller/ApprovalController.java
  * @Description: 审批流程控制器
  * 
@@ -21,9 +21,6 @@ import com.tech.lyric.service.ApprovalService;
 @RestController
 @RequestMapping("/approval")
 public class ApprovalController {
-
-    @Autowired
-    private ApprovalService approvalService;
 
     @RequestMapping("/getCurrentState")
     public String getCurrentState() {
@@ -56,4 +53,8 @@ public class ApprovalController {
         approvalService.reject();
         return "Rejected, current state: " + approvalService.getCurrentState();
     }
+
+    @Autowired
+    private ApprovalService approvalService;
+
 }

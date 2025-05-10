@@ -2,7 +2,7 @@
  * @Author: chengkun
  * @Date: 2025-05-10 10:34:58
  * @LastEditors: chengkun
- * @LastEditTime: 2025-05-10 12:20:34
+ * @LastEditTime: 2025-05-10 16:19:37
  * @FilePath: /lyric/src/main/java/com/tech/lyric/service/impl/ApprovalServiceImpl.java
  * @Description: 审批服务实现类
  * 
@@ -20,9 +20,6 @@ import com.tech.lyric.service.ApprovalService;
 
 @Service
 public class ApprovalServiceImpl implements ApprovalService {
-
-    @Autowired
-    private StateMachine<ApprovalState, ApprovalEvent> stateMachine;
 
     @Override
     public void submitApproval() {
@@ -44,5 +41,8 @@ public class ApprovalServiceImpl implements ApprovalService {
     public ApprovalState getCurrentState() {
         return stateMachine.getState().getId();
     }
+
+    @Autowired
+    private StateMachine<ApprovalState, ApprovalEvent> stateMachine;
 
 }
