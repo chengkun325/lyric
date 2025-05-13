@@ -1,0 +1,20 @@
+2025-05-13 22:41:13.262 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-13 22:41:15.276 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-13 22:41:15.288 [SpringApplicationShutdownHook] INFO  o.s.statemachine.support.LifecycleObjectSupport - destroy called
+2025-05-13 22:41:19.001 [main] INFO  com.tech.lyric.LyricApplication - Starting LyricApplication using Java 21.0.6 with PID 15367 (/Users/chengkun/Desktop/lyric/target/classes started by chengkun in /Users/chengkun/Desktop/lyric)
+2025-05-13 22:41:19.001 [main] INFO  com.tech.lyric.LyricApplication - The following 1 profile is active: "dev"
+2025-05-13 22:41:19.329 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-13 22:41:19.331 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-13 22:41:19.350 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-05-13 22:41:19.591 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.statemachine.config.configuration.StateMachineAnnotationPostProcessorConfiguration' of type [org.springframework.statemachine.config.configuration.StateMachineAnnotationPostProcessorConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [org.springframework.statemachine.processor.stateMachineAnnotationPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-05-13 22:41:19.721 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-13 22:41:19.729 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-13 22:41:19.729 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-13 22:41:19.754 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-13 22:41:19.755 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 731 ms
+2025-05-13 22:41:20.290 [main] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1804f60d
+2025-05-13 22:41:20.386 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-13 22:41:20.394 [main] INFO  com.tech.lyric.LyricApplication - Started LyricApplication in 1.663 seconds (process running for 1.93)
+2025-05-13 22:42:06.728 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-13 22:42:08.739 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-13 22:42:08.748 [SpringApplicationShutdownHook] INFO  o.s.statemachine.support.LifecycleObjectSupport - destroy called

@@ -12,9 +12,11 @@ package com.tech.lyric.config;
 
 import java.util.EnumSet;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.statemachine.config.EnableStateMachine;
 import org.springframework.statemachine.config.StateMachineConfigurerAdapter;
+import org.springframework.statemachine.config.builders.StateMachineConfigurationConfigurer;
 import org.springframework.statemachine.config.builders.StateMachineStateConfigurer;
 import org.springframework.statemachine.config.builders.StateMachineTransitionConfigurer;
 
@@ -24,8 +26,17 @@ import com.tech.lyric.enums.ApprovalState;
 @Configuration
 @EnableStateMachine(name = "approvalStateMachine")
 public class ApprovalStateMachineConfig extends StateMachineConfigurerAdapter<ApprovalState, ApprovalEvent> {
+    
+    @Autowired
+    private ApprovalStateListener approvalStateListener;
+    
     @Override
+    public void configure(StateMachineConfigurationConfigurer<ApprovalState, ApprovalEvent> config) throws Exception {
+        config.withConfiguration()
+                .listener(approvalStateListener);
+    }
 
+    @Override
     public void configure(StateMachineStateConfigurer<ApprovalState, ApprovalEvent> states) throws Exception {
         states.withStates()
                 .initial(ApprovalState.UN_SUBMIT)

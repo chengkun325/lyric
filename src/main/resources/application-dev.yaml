@@ -1,0 +1,82 @@
+server:
+  port: 8080
+
+
+spring:
+  application:
+    name: lyric
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/lyric?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: D12138ck
+    # 数据库连接池配置
+    hikari:
+      # 最小空闲连接数
+      minimum-idle: 5
+      # 最大连接数
+      maximum-pool-size: 20
+      # 空闲连接超时时间
+      idle-timeout: 300000
+      # 连接最大存活时间
+      max-lifetime: 1200000
+      # 连接超时时间
+      connection-timeout: 20000
+      # 测试连接是否可用的查询语句
+      connection-test-query: SELECT 1
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password:
+
+
+  mail:
+    host: smtp.qq.com
+    username: 357086686@qq.com
+    password: okgnvpekygdfbjic
+    default-encoding: UTF-8
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+          ssl:
+            enable: true
+
+mybatis-plus:
+  # mapper xml文件路径
+  mapper-locations: classpath*:/mapper/**/*.xml
+  # 实体类扫描路径
+  type-aliases-package: com.tech.lyric.entity
+  configuration:
+    # 驼峰命名转换
+    map-underscore-to-camel-case: true
+    # 开启sql日志打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      # 主键生成策略
+      id-type: auto
+      # 逻辑删除字段
+      logic-delete-field: deleted
+      # 逻辑删除值
+      logic-delete-value: 1
+      # 逻辑未删除值
+      logic-not-delete-value: 0
+
+
+user:
+  code:
+    format: 【LYRIC】%s为本次验证的验证码，请在5分钟内完成验证。为保证账号安全，请勿泄漏此验证码。
+
+
+qiniu:
+  accessKey: IdDmmjDJ_OUfMYUz3cPBgGfw3h7Q0vjTfN2mXw8c
+  secretKey: VqzwRwLcEGMDURZfk8MpXEA17QSS9b5tDD5R21Cp
+  bucket: tech-lyric
+  domain: http://sw2sn9u35.bkt.gdipper.com/

@@ -1,0 +1,21 @@
+{"properties": [{
+  "name": "user.code.format",
+  "type": "java.lang.String",
+  "description": "A description for 'user.code.format'"
+},{
+    "name": "qiniu.accessKey",
+    "type": "java.lang.String",
+    "description": "七牛云accessKey"
+},{
+    "name": "qiniu.secretKey",
+    "type": "java.lang.String",
+    "description": "七牛云secretKey"
+},{
+    "name": "qiniu.bucket",
+    "type": "java.lang.String",
+    "description": "七牛云bucket"
+},{
+    "name": "qiniu.domain",
+    "type": "java.lang.String",
+    "description": "七牛云domain"
+}]}
